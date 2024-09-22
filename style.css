@@ -1,0 +1,670 @@
+*{
+    padding: 0px;
+}
+
+/*Nav Bar*/
+nav{
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top:0;
+    z-index: 1;
+    transition: 0.3s;
+    background-color: white;
+}
+
+nav img{
+    padding-left: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 
+.nav-items p:hover{
+    color: rgb(176, 62, 167);
+    border-bottom: 2px solid rgb(131, 58, 131);
+} */
+
+
+.nav-items p {
+  position: relative; /* Required for the pseudo-element */
+  display: inline-block;
+}
+
+.nav-items p::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%; /* Start from the center */
+  background-color: rgb(118, 55, 118);
+  transition: width 0.4s ease, left 0.4s ease; /* Smooth transition for width and left */
+}
+
+.nav-items p:hover::before {
+  width: 100%; /* Expand the underline to full width */
+  left: 0; /* Shift the underline starting point to the left */
+}
+
+.nav-items p:hover {
+  color:rgb(118, 55, 118);
+}
+
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 250px;
+    float:inline-end;
+    gap: 20px; 
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+
+/*Banner*/
+
+.banner{
+    background-color:whitesmoke;
+}
+
+.col-5 h1{
+    color: rgb(118, 55, 118);
+    font-weight: 700;
+    padding-top: 30px;
+}
+
+.col-5 h4{
+    color: rgb(118, 55, 118);
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.col-5 p{
+    font-weight: 700;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: medium;
+}
+
+.certificate{
+    width: 150px;
+    height: 100px;
+    padding-top: 20px;
+    gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.person1{
+    width: 500px;
+    height: 500px;
+}
+
+.vl {
+    border-left: 6px solid rgb(118, 55, 118);
+    height: 40px;
+  }
+
+  .cer{
+    display: flex;
+    align-items: center;
+  }
+
+  .button1{
+    padding-top: 20px;
+  }
+
+  .btn1{
+    background-color: rgb(118, 55, 118);
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    font-size:large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+
+
+  /*Mission*/
+
+  
+
+  .mission{
+    padding-bottom: 60px;
+  }
+
+  .mission h4{
+    font-size: large;
+    padding-top: 150px;
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .mission h1{
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+  
+  }
+
+  .mission p{
+    font-size: smaller;
+    padding-right: 70px;
+    font-weight: 300;
+  }
+
+  .mission button{
+    padding: 6px;
+    color:rgb(118, 55, 118);
+    background-color: white;
+    border-color: rgb(118, 55, 118);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: 700;
+    width: 100px;
+  }
+
+
+  /* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image to responsive */
+  .image1 {
+    width: 100%;
+    height: auto;
+    padding-top: 150px;
+    
+  }
+
+  .image2 {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 300px; /* Adjust the size of the container */
+  }
+  
+  .image1, .image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease; /* Smooth fading effect */
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center;
+  }
+
+
+  
+
+  /*Courses*/
+
+  .courses{
+    height: 1000px;
+    width: 100%;
+    background-color: rgb(118, 55, 118);
+  }
+
+  .courses h1{
+    padding-top: 110px;
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+  }
+
+  .courses h3{
+    color: white;
+    font-weight: 200;
+    font-size: larger;
+  }
+
+.card-body{
+  height: 400px;
+}
+
+.viewmore{
+  color: rgb(99, 33, 129);
+}
+
+.courses p{
+  color: white;
+}
+
+.span{
+  color: white;
+}
+
+.btn2{
+  color:rgb(99, 33, 129);
+  width: 130px;
+  padding: 8px;
+  font-weight: 700;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+
+.card {
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.cardc, .round-image {
+  background-color: rgb(234, 197, 234); /* Set initial background color to violet */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.card:hover .cardc, 
+.card:hover .round-image {
+  background-color: white; /* Change to white on hover */
+}
+
+.viewmore {
+  color: black; /* Initial link color */
+  text-decoration:underline; /* Remove underline */
+}
+
+.viewmore:hover {
+  color:  rgb(196, 159, 196); /* Change link color on hover */
+}
+
+.round-image {
+  display: block;        /* Center the image */
+  margin: 0 auto;        /* Horizontally center */
+  border-radius: 50%;    /* Make the image circular */
+  height: 100px;         /* Set height */
+  width: 100px;          /* Set width */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+
+
+/*Instagram Feed*/
+
+
+
+
+
+
+.instafeed{
+  height: 500px;
+  background-color: whitesmoke;
+}
+
+
+.instafeed h1{
+  font-weight: 900;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(118, 55, 118);
+  padding-top: 20px;
+}
+
+div.scroll-container {
+  background-color: #f5f4f4;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  width: 400px;
+  height: 400px;
+  padding: 10px;
+}
+
+/*News*/
+
+.news{
+  background-color: white;
+  height: 120px;
+  padding-top: 30px;
+}
+
+.news img{
+  width: 90px;
+  height: 30px;
+  align-items: center;
+  padding-left: 50px;
+}
+
+div.scroll-container1 {
+  background-color:white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+/*About*/
+
+.about{
+  height: 650px;
+}
+
+.about h1{
+  padding-left: 200px;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(118, 55, 118);
+  padding-top: 50px;
+}
+
+
+.about h3{
+  padding-left: 200px;
+  font-weight: 300;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(118, 55, 118);
+  padding-bottom: 40px;
+}
+
+.card2{
+  height: 380px;
+  width: 300px;
+  background-color: whitesmoke;
+  border: 2px solid rgb(224, 213, 213);
+  border-radius: 3%;
+  transition: box-shadow 0.3s ease;
+}
+
+.card2:hover { 
+  box-shadow: 10px 10px 20px rgb(118, 55, 118); 
+} 
+
+.icon1{
+  height: 60px;
+  padding-left: 120px;
+  padding-top: 30px;
+}
+
+.about h5{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+
+.about p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+  font-size: small;
+  font-weight: 400;
+}
+
+
+/*Reviews*/
+
+.reviews{
+  height: 600px;
+  background-color: whitesmoke;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: rgb(118, 55, 118);
+ 
+  padding-left: 150px;
+}
+
+.reviews h1{
+  font-weight: 800;
+  padding-bottom: 50px;
+}
+
+.reviews h4{
+   padding-top: 100px;
+}
+
+.reviews h2{
+  font-weight: 700;
+}
+
+.img2{
+  height: 30px;
+  padding-bottom: 20px;
+}
+
+.img3{
+  height: 400px;
+  padding-bottom: 100px;
+  padding-right: 0px;
+}
+
+.card3img{
+  width: 400px;
+  height: 300px;
+}
+
+.card3 h5{
+  color: rgb(118, 55, 118);
+  font-weight: 500;
+}
+
+
+/*Mission and vision*/
+
+.vision{
+  height: 600px;
+}
+
+.videoicon{
+  height: 300px;
+  width: 300px;
+  padding-top: 100px;
+}
+
+.videoicon h6{
+  color: rgb(118, 55, 118);
+  font-weight: 600;
+}
+
+.videoicon h1{
+  color: #000;
+  font-weight: 900;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.videoicon p{
+  font-weight: 300;
+}
+
+.video{
+  padding-top: 150px;
+}
+
+
+
+
+
+/*Technology Stack*/
+
+.technologystack{
+  height: 550px;
+  background-color: whitesmoke;
+}
+
+.technologystack h1{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 100px;
+  padding-left: 50px;
+}
+
+.technologystack p{
+  font-size: small;
+  font-weight: 300;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.img4 img{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.img4 img:hover { 
+  box-shadow: 10px 10px 20px rgb(118, 55, 118); 
+} 
+
+.img4 img {
+  margin: 10px 20px; /* 10px vertical space, 20px horizontal space */
+}
+
+.img4 img {
+  margin: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.img4 img:hover {
+  transform: scale(1.1); /* Scale image to 110% */
+}
+
+.img5{
+  padding-top: 100px;
+}
+
+.img6{
+  padding-top: 250px;
+  border-radius: 20px;
+}
+
+.img5 img{
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.img6 img{
+  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+/*Join Now*/
+
+.join{
+  height: 500px;
+  background-color: #000;
+}
+
+.join h1{
+  color: white;
+  padding-top: 60px;
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+}
+
+.join p{
+  padding-top: 20px;
+  text-align: center;
+  color: rgb(205, 176, 124);
+  padding-bottom: 40px;
+}
+
+.btn4{
+
+
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center the text and button */
+  min-height: 200px;
+}
+
+.btn4 {
+  padding: 10px 20px;
+  color:rgb(118, 55, 118);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 10px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 150px;
+}
+
+
+/*Footer*/
+
+.footer{
+  background-color: white;
+  text-decoration: none;
+}
+
+.text-reset {
+  text-decoration: none; /* Removes the underline from links */
+  color: white;  
+  transition: color 0.3s; /* Smooth color transition */     /* Keeps the text color the same as surrounding text */
+}
+
+.text-reset:hover {
+  text-decoration: underline; /* Optional: Add underline on hover for accessibility */
+  color:rgb(118, 55, 118);       /* Changes text color to violet on hover */
+}
+
+.col-md-2 p:hover {
+  color: rgb(118, 55, 118); /* Change text color to violet on hover */
+}
+
+.text-reset {
+  text-decoration: none; /* Removes the underline from links */
+  color: white;         /* Set initial color to white */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer h5{
+  color: rgb(118, 55, 118); 
+  
+}
+
+.footer h6 {
+  color:rgb(118, 55, 118);  /* Change heading color to violet */
+}
+
+.text-reset {
+  text-decoration: none; /* Removes the underline from links */
+  color: white;         /* Set initial color to white for links */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.text-reset:hover {
+  color: rgb(118, 55, 118);  /* Change link color to violet on hover */
+}
+
+.footer img{
+  width: 200px;
+  height: 60px;
+  padding-left: 30px;
+}
